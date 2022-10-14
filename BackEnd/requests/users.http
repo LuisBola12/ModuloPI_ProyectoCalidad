@@ -1,0 +1,150 @@
+@apiUsers = http://localhost:4000/users
+@apiEmployees = http://localhost:4000/employees
+@apiEmployee = http://localhost:4000/employee
+@apiEmployeeContract = http://localhost:4000/employee/contract
+@apiProjects = http://localhost:4000/projects
+@apiBenefits = http://localhost:4000/benefits
+@apiVolDeductions = http://localhost:4000/volDeductions
+@apiCreateEmployer =  http://localhost:4000/createEmployer
+@apiVerifyUser =  http://localhost:4000/verifyUser
+@apiEmployer =  http://localhost:4000/employer
+@apiContracts = http://localhost:4000/typeContracts
+
+
+POST {{apiUsers}}
+Content-Type: application/json
+
+{
+  "Email": "aroaefaefexample.com",
+  "Contrasenia": "fdef"
+}
+###
+POST {{apiCreateEmployer}}
+Content-Type: application/json
+
+{
+  "Cedula" : "8765434", 
+  "Nombre" : "prueba", 
+  "Apellido1" : "por favor", 
+  "Apellido2" : "funcione", 
+  "Telefono" : "12345567",
+  "Email" : "jklkjhg@qwert.com",
+  "Contrasenia": "123445"
+}
+###
+POST {{apiVerifyUser}}
+Content-Type: application/json
+
+{
+  "Cedula": "121121121",
+  "Email": "josefR@example.com"
+}
+###
+POST {{apiEmployeeContract}}
+Content-Type: application/json
+
+{
+  "Cedula": "187612921",
+  "Proyecto": "Radiadores Solceri"
+}
+
+###
+GET {{apiEmployee}}/187612921
+
+###
+GET {{apiEmployer}}
+
+###
+GET {{apiUsers}}
+
+###
+GET {{apiUsers}}/josefR@example.com
+
+###
+GET {{apiEmployees}}/Super La Esquina
+
+###
+GET {{apiProjects}}/josefR@example.com
+
+###
+GET  {{apiVolDeductions}}/Taquería Milagro
+
+###
+GET {{apiBenefits}}/Taquería Milagro
+
+###
+GET {{apiContracts}}
+
+###
+POST {{apiBenefits}}
+Content-Type: application/json
+
+{
+  "Nombre":"Prueba444",
+  "NombreProyecto": "Radiadores Solceri",
+  "CostoActual": 4000
+}
+
+###
+POST {{apiEmployees}}
+Content-Type: application/json
+
+{
+  "Nombre":"Prueba",
+  "NombreProyecto": "Radiadores Solceri",
+  "CostoActual": 4000
+}
+
+###
+POST {{apiVolDeductions}}
+Content-Type: application/json
+
+{
+  "Nombre":"Prueba3",
+  "NombreProyecto": "Taquería Milagro",
+  "Costo": 0,
+  "Descripcion": "prueba descripcion3"
+}
+
+###
+POST {{apiEmployee}}
+Content-Type: application/json
+
+{
+  "NombreProyecto":"Radiadores Solceri",
+  "Email":"erickV@example.com",
+  "Contrasenia":"1234",
+  "Roles":"empleado",
+  "Nombre":"Erick",
+  "Apellido1":"Valverde",
+  "Apellido2":"Gonzales",
+  "Cedula":"187126112",
+  "Telefono":87126121,
+  "TipoJornada":"Por Horas",
+  "FechaFinContrato":"2025-09-19",
+  "SalarioPorHora":"6000",
+  "NombreServicio":"",
+  "ValorServicio":0
+}
+
+###
+POST {{apiProjects}}
+Content-Type: application/json
+
+{
+  "Nombre":"Pepsi",
+  "Periodo":"Mensual",
+  "Email":"josefR@example.com"
+}
+
+###
+
+PUT {{apiBenefits}}/Almuerzo
+Content-Type: application/json
+
+{
+  "Nombre": "Almuerzo de prueba",
+  "NombreProyecto": "Taquería Milagro",
+  "CostoActual": 20000,
+  "Descripción": "Esto es una prueba de la edición"
+}

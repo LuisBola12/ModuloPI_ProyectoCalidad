@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
+
+* {
+  font-family: 'Sora', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  /* background-color: #282c34; */
+  background-color: #000;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.table-button {
+  margin-top: 50px;
+  width: 80%;
+}
+
+.details-table-button {
+  margin-top: 50px;
+  width: 80%;
+}
+
+.details-head-title {
+  font-family: sans-serif;
+  text-align: center;
+  width: 80%;
+}
+
+.page-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  box-shadow: 0px 0px 10px 0px rgba(115, 115, 115, 0.55);
+  margin: 2.5%;
+  border-radius: 1rem;
+  min-height: 80vh;
+  gap: 30px;
+}
+
+
+.button {
+  padding: 10px;
+  border-radius: 8px;
+  color: white;
+  border-color: white;
+  background-color: #133c54;
+  border-style: none;
+  width: 100px;
+}
+
+.details-button {
+  padding: 10px;
+  border-radius: 8px;
+  color: white;
+  border-color: white;
+  background-color: #178cd1;
+  border-style: none;
+  width: 100px;
+}
+.back-arrow-button{
+  padding: 10px;
+  text-align: left;
+  border-radius: 8px;
+  border-color: white;
+  background: none;
+  border-style: none;
+  width: 150px;
+}
+
+
+.button:hover {
+  background-color: #1f6085;
+}
+
+.warning-message {
+  color: darkred;
+  padding-right: 95px;
+
+}
+
+.add-button {
+  background-color: darkgreen;
+}
+
+.add-button:hover {
+  background-color: rgb(3, 119, 3);
+}
+
+
+.create-button:hover {
+  background-color: rgb(3, 119, 3);
+}
+
+
+.cancel-button {
+  background-color: darkred;
+}
+
+.cancel-button:hover {
+  background-color: rgb(172, 1, 1);
+}
+
+.create-button {
+  margin-bottom: 20px;
+  background-color: darkgreen;
+  padding: 10px;
+  border-radius: 8px;
+  color: white;
+  border-color: white;
+  border-style: none;
+  width: 200px;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  text-align: center;
+
+}
+
+table {
+  text-align: center;
+  height: 10%;
+  margin-bottom: 100px;
+  width: 80%;
+}
+
+
+th {
+  margin-bottom: 20px;
+  background-color: #133c54;
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 20px;
+}
+
+td {
+  padding: 20px;
+  text-align: center;
+}
+
+
+tr:nth-child(even) {
+  background-color: rgb(233, 233, 233);
+}
+
+.right-td {
+  text-align: right;
+}
+
+.right-button {
+  text-align: right;
+  padding: 0;
+}
+
+.left-td {
+  text-align: left;
+}
+
+.description-cell {
+  width: 40%;
+}
+
+
+.table-left-border {
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+.table-right-border {
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.dropdown-Contract {
+  border-style: solid;
+  height: 55px;
+  width: 500px;
+  padding: 8px;
+  text-align: center;
+  border-radius: 0.25rem;
+}
+
+.form-group {
+  margin-top: 30px;
+}
+
+.forms-create-employee {
+  margin: 40px;
+}
+
+.user-head {
+  position: relative;
+  right: 100px;
+}
+
+.user-img {
+  height: 300px;
+  width: 300px;
+  margin-top: 80px;
+}
+
+.user-tag {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.employee-label {
+  font-size: 25px;
+  margin-right: 20px;
+  width: 300px;
+}
+
+.employee-input {
+  height: 55px;
+  width: 500px;
+  border-radius: 0.25rem;
+  text-align: center;
+}
+
+.employee-input-address {
+  height: 100px;
+  width: 500px;
+  border-radius: 0.25rem;
+}
+
+.submit-btn-employee {
+  margin: 50px;
+  background-color: darkgreen;
+  padding: 10px;
+  border-radius: 8px;
+  color: white;
+  border-color: white;
+  border-style: none;
+  height: 80px;
+  width: 150px;
+}
+
+.back-btn-employee {
+  margin: 50px;
+  background-color: darkred;
+  padding: 10px;
+  border-radius: 8px;
+  color: white;
+  border-color: white;
+  border-style: none;
+  height: 80px;
+  width: 150px;
+}
+
+.employee-hired-until {
+  height: 55px;
+  width: 500px;
+  border-radius: 0.25rem;
+  text-align: center;
+}
+
+.submit-cancel-employee {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.employee-address-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+::-webkit-input-placeholder {
+  text-align: center;
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  text-align: center;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  text-align: center;
+}
+
+:-ms-input-placeholder {
+  text-align: center;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  /* Light grey */
+  border-top: 16px solid #3498db;
+  /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  margin-top: 10%;
+}
+
+.forms-create-employee-hwage {
+  margin: 40px;
+  display: none;
+}
+
+.forms-create-employee-hwage2 {
+  margin: 40px;
+}
+
+.forms-create-employee-service {
+  margin: 40px;
+  display: none;
+  /* color: #74f2f0; */
+}
+
+.forms-create-employee-service2 {
+  margin: 40px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.Empty-message {
+  font-size: 2rem;
+  opacity: 75%;
+  text-align: center;
+}
+
+.sticky-navbar {
+  position: sticky;
+  top: 0;
+}
+
+.benefit-name {
+  width: 20%;
+}
